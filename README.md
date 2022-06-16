@@ -43,6 +43,12 @@ All environment variables you can find in
 # ########################## Global ##############################################
 VM_BOX=generic/debian11
 
+# ########################## VM PHPMyAdmin #######################################
+VM_PHPMYADMIN_IP=192.168.56.11
+
+# ########################## VM MySQL ############################################
+VM_MYSQL_IP=192.168.56.11
+
 # ########################## PHPMyAdmin arguments ################################
 # 1st arg:
 PHPMYADMIN_PASSWORD=password1
@@ -60,7 +66,8 @@ MYSQL_HOST=localhost
 MYSQL_USER_PASSWORD=password2
 # 2nd arg:
 MYSQL_ROOT_PASSWORD=password3
-
+# 3d arg:
+ALLOWED_HOST=192.168.56.11
 ```
 
 ### After successfully running vagrant :
@@ -72,18 +79,19 @@ VM with mysql:
 
 ```
 MYSQL ROOT NAME - root
-MYSQL ROOT PASSWORD - root
+MYSQL ROOT PASSWORD - password3
 MYSQL USER NAME - newuser
-MYSQL USER PASSWORD - password1
-MYSQL DB NAME - new_db
-MYSQL port - 3306
-ALLOWED IP ADRESS FOR MYSQL - 127.0.0.1
+MYSQL USER PASSWORD - password2
+MYSQL DB NAME - some_db
+MYSQL PORT - 3306
+ALLOWED IP FOR MYSQL ROOT - localhost
+ALLOWED IP FOR MYSQL USER 'newuser'- 192.168.56.11
 ```
 
 VM with phpmyadmin:
 
 ```
-PHPMYADMIN USER PASSWORD - password2
+PHPMYADMIN USER PASSWORD - password1
 PHPMYADMIN URL - http://localhost/phpmyadmin/
 ```
 
