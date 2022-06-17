@@ -43,7 +43,7 @@ Vagrant.configure(2) do |config|
     phpmyadmin_config.vm.provision "shell" do |s| 
       s.inline = $phpmyadmin_install 
       s.privileged = false
-      s.args = "#{ENV['PHPMYADMIN_PASSWORD']} #{ENV['MYSQL_USER_NAME']} #{ENV['MYSQL_USER_PASSWORD']} #{ENV['MYSQL_DB_NAME']} #{ENV['MYSQL_HOST']}"
+      s.args = "#{ENV['PHPMYADMIN_PASSWORD']} #{ENV['MYSQL_USER_NAME']} #{ENV['MYSQL_PASSWORD']} #{ENV['MYSQL_DB_NAME']} #{ENV['MYSQL_HOST']}"
     end
   end
     

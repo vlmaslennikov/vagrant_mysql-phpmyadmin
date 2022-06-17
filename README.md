@@ -44,28 +44,28 @@ All environment variables you can find in
 VM_BOX=generic/debian11
 
 # ########################## VM PHPMyAdmin #######################################
-VM_PHPMYADMIN_IP=192.168.56.11
+VM_PHPMYADMIN_IP=192.168.56.10
 
 # ########################## VM MySQL ############################################
 VM_MYSQL_IP=192.168.56.11
 
 # ########################## PHPMyAdmin arguments ################################
 # 1st arg:
-PHPMYADMIN_PASSWORD=password1
+PHPMYADMIN_PASSWORD=phpmyadmin=password1
 # 2nd arg:
-MYSQL_USER_NAME=user
+MYSQL_USER_NAME=newuser
 # 3d arg:
 MYSQL_USER_PASSWORD=password2
 # 4th arg:
-MYSQL_DB_NAME=some_db
+MYSQL_DB_NAME=new_db
 # 5th arg:
-MYSQL_HOST=localhost
+MYSQL_HOST=192.168.56.10
 
 # ########################## MySQL arguments #####################################
 # 1st arg:
-MYSQL_USER_PASSWORD=password2
+MYSQL_USER_PASSWORD=mysql=password2
 # 2nd arg:
-MYSQL_ROOT_PASSWORD=password3
+MYSQL_ROOT_PASSWORD=root=password3
 # 3d arg:
 ALLOWED_HOST=192.168.56.11
 ```
