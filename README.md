@@ -31,11 +31,9 @@ Script launched by vagrant downloads and runs mysql and phpmyadmin installation 
 
 ### Environment variables :
 
-
 All environment variables you can find in
 `.env`  and `.example.env`
 
-```
 .example.env
 
 # ########################## Vagrant config ######################################
@@ -44,10 +42,10 @@ All environment variables you can find in
 VM_BOX=generic/debian11
 
 # ########################## VM PHPMyAdmin #######################################
-VM_PHPMYADMIN_IP=192.168.56.10
+VM_PHPMYADMIN_IP=192.168.56.11
 
 # ########################## VM MySQL ############################################
-VM_MYSQL_IP=192.168.56.11
+VM_MYSQL_IP=192.168.56.10
 
 # ########################## PHPMyAdmin arguments ################################
 # 1st arg:
@@ -68,10 +66,8 @@ MYSQL_USER_PASSWORD=mysql=password2
 MYSQL_ROOT_PASSWORD=root=password3
 # 3d arg:
 ALLOWED_HOST=192.168.56.11
-```
 
 ### After successfully running vagrant :
-
 
  Upon successful completion of the installation script, the user credentials and connection information will be displayed in the console
 
@@ -96,7 +92,6 @@ PHPMYADMIN URL - http://localhost/phpmyadmin/
 ```
 
 ### Connecting to VM:
-
 
 VM with mysql:
 
