@@ -53,7 +53,7 @@ PHPMYADMIN_PASSWORD=phpmyadmin=password1
 # 2nd arg:
 MYSQL_USER_NAME=newuser
 # 3d arg:
-MYSQL_USER_PASSWORD=password2
+MYSQL_PASSWORD=password2
 # 4th arg:
 MYSQL_DB_NAME=new_db
 # 5th arg:
